@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="sniper.kiddevtraining.CodeLineListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="?attr/actionBarSize">
+            <!-- "Code Editor Panel Fragment" -->
+            <fragment class="sniper.kiddevtraining.CodeEditorFragment"
+                      android:id="@+id/code_editor_fragment"
+                      android:layout_width="@dimen/code_editor_panel_size"
+                      android:layout_height="match_parent"/>
+            <!-- "Fragment B" -->
+            <fragment class="sniper.kiddevtraining.CodeSceneFragment"
+                      android:id="@+id/code_scene_fragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/code_input_field"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="Type your code here"
+            android:imeOptions="actionSend"
+            android:imeActionId="@integer/action_id_send"
+            android:textSize="18sp"/>
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/code_apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_send"/>
+
+</android.support.design.widget.CoordinatorLayout>

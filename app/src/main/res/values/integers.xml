@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="action_id_send">4</integer>
+    <!--Animation Durations-->
+    <integer name="screen_horizontal_transition_duration">250</integer>
+    <integer name="screen_vertical_transition_duration">2500</integer>
+    <integer name="splash_screen_animation_duration">2000</integer>
+    <integer name="single_conversation_arrow_animation_duration">200</integer>
+</resources>
