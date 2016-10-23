@@ -71,6 +71,7 @@ class CodeLineListActivity : AppCompatActivity(), Game {
             applyCode.postDelayed({ renderView.pause() }, 5000)
             //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
             //                        .setAction("Action", null).show();
+//
         }
         codeInput?.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, event ->
             //only if action is up
